@@ -1,0 +1,45 @@
+@import "variable.scss";
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body, html {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  color: $color-text;
+}
+a {
+  text-decoration: none;
+  color: $color-text;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+.container-box {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $distance-x1;
+  padding-left: $distance-x1;
+  max-width: 1200px;
+}
+// 清除浮动
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.el-checkbox .el-checkbox__inner{
+  border: 2px solid #000;
+}
+
+.breakAll{
+  word-break: break-all;
+}
